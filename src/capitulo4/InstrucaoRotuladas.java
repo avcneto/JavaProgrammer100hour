@@ -1,6 +1,7 @@
 package capitulo4;
 
 public class InstrucaoRotuladas {
+	@SuppressWarnings("unused")
 	public static void main(String args[]) {
 
 		instrucao1:

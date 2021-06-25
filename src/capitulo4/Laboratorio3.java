@@ -8,6 +8,7 @@ public class Laboratorio3 {
 		System.out.print("Digite o ano atual: ");
 
 		int anoAtual = leitor.nextInt();
+		leitor.close();
 		System.out.println();
 
 		for (int ano = 1930; ano <= anoAtual; ano += 4) {
