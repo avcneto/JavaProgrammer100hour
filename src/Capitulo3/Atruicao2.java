@@ -1,4 +1,4 @@
-package Capitulo3;
+package capitulo3;
 
 public class Atruicao2 {
 	public static void main(String[] args) {
