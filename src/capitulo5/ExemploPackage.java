@@ -1,6 +1,6 @@
 package capitulo5;
 
-import capitulo5Grafico.Circulo;
+import capitulo5.cap5_grafico.Circulo;
 
 public class ExemploPackage {
 	public static void main(String[] args) {

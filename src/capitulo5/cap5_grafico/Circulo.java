@@ -1,4 +1,4 @@
-package capitulo5Grafico;
+package capitulo5.cap5_grafico;
 
 public class Circulo {
 	public void mostrar() {
