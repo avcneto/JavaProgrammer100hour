@@ -7,15 +7,34 @@ public class UserCalculadora {
 		Scanner leitor = new Scanner(System.in);
 
 		System.out.print("Digite o primeiro valor: ");
-		int valor1 = leitor.nextInt();
+		float valor1 = leitor.nextFloat();
 
 		System.out.print("Digite o segundo valor: ");
-		int valor2 = leitor.nextInt();
-		leitor.close();
+		float valor2 = leitor.nextFloat();
 
 		Calculadora cal = new Calculadora();
-		int resultado = cal.somar(valor1, valor2);
-		System.out.println(valor1 + " + " + valor2 + " = " + resultado);
+
+		System.out.println("Digite a opção do operador: \n1 - soma\n2- subtrair\n3- multiplicar\n4 - dividir");
+		int operacao = leitor.nextInt();
+		leitor.close();
+
+		switch (operacao) {
+		case 1:
+			System.out.println(valor1 + " + " + valor2 + " = " + cal.somar(valor1, valor2));
+			break;
+		case 2:
+			System.out.println(valor1 + " - " + valor2 + " = " + cal.subtrair(valor1, valor2));
+			break;
+		case 3:
+			System.out.println(valor1 + " x " + valor2 + " = " + cal.multiplicar(valor1, valor2));
+			break;
+		case 4:
+			System.out.println(valor1 + " / " + valor2 + " = " + cal.dividir(valor1, valor2));
+			break;
+		default:
+			System.out.println("Operação invalida");
+		}
+
 	}
 
 }
