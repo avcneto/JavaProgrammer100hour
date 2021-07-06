@@ -28,4 +28,9 @@ public class RG {
 		this.numero = numero;
 	}
 
+	@Override
+	public String toString() {
+		return "RG [numero=" + numero + ", dataNasc=" + dataNasc + "]";
+	}
+
 }

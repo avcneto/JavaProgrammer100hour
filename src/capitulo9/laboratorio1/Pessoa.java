@@ -47,9 +47,14 @@ public abstract class Pessoa {
 	public void setRg(RG rg) {
 		this.rg = rg;
 	}
-	
+
 	public abstract void falar(String fala);
-	
+
 	public abstract void mostrarDados();
+
+	@Override
+	public String toString() {
+		return "Pessoa [nome=" + nome + ", idade=" + idade + ", sexo=" + sexo + ", rg=" + rg + super.toString() + "]";
+	}
 
 }

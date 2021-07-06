@@ -6,16 +6,24 @@ public class UserCalculadora {
 	public static void main(String args[]) {
 		Scanner leitor = new Scanner(System.in);
 
+		System.out.println("Digite a opção do operador: \n1 - soma\n2 - subtrair\n3 - multiplicar\n4 - dividir");
+		int operacao = leitor.nextInt();
+
 		System.out.print("Digite o primeiro valor: ");
 		float valor1 = leitor.nextFloat();
-
 		System.out.print("Digite o segundo valor: ");
 		float valor2 = leitor.nextFloat();
 
+		if (valor2 == 0) {
+			do {
+				System.out.print("Segundo valor é invalido, digite novamente ");
+				valor2 = leitor.nextFloat();
+
+			} while (valor2 == 0);
+		}
+
 		Calculadora cal = new Calculadora();
 
-		System.out.println("Digite a opção do operador: \n1 - soma\n2- subtrair\n3- multiplicar\n4 - dividir");
-		int operacao = leitor.nextInt();
 		leitor.close();
 
 		switch (operacao) {
